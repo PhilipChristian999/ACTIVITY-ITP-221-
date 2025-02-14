@@ -16,11 +16,8 @@ class Employee:
         print(f"Position: {self.position}")
         print(f"Salary: Php{self.salary:.2f}")
 
-# Create an employee
 employee = Employee(name="John Pakidua", position="Aerospace Engineer", salary=75000)
 
-# Give the employee a raise
-employee.give_raise(5000)  # Increase salary
+employee.give_raise(5000)
 
-# Display employee details
 employee.display_employee()
