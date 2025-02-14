@@ -23,14 +23,9 @@ class BankAccount:
     
     def display_balance(self):
         print(f"Account Balance: Php{self.balance:.2f}")
-
-# Create a bank account
 account = BankAccount("12345678", "James Pelimon")
-
-# Perform transactions
-account.deposit(500)   # Deposit $500
-account.withdraw(200)  # Withdraw $200
-account.display_balance()  # Display the balance
-
-account.withdraw(400)  # Attempt to withdraw $400, should fail due to insufficient balance
-account.display_balance()  # Display the updated balance
+account.deposit(500)  
+account.withdraw(200)
+account.display_balance()
+account.withdraw(400)
+account.display_balance()
